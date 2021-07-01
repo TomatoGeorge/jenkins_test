@@ -3,8 +3,7 @@ pipeline {
   stages {
     stage('error') {
       steps {
-        sh '''ls
-'''
+        sh './gradlew clean test'
       }
     }
 
